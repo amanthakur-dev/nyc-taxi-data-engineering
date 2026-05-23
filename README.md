@@ -120,9 +120,5 @@ Raw Parquet Files (NYC TLC)
 Yellow Taxi — January & February 2026
 
 ---
+**Aman Thakur**  
 
-## 👤 Author
-
-**[Your Name]**  
-BTech CSE (Data Science) | Data Engineering  
-[LinkedIn](your-linkedin-url) • [GitHub](your-github-url)
