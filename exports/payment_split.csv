@@ -1,0 +1,5 @@
+payment_method,total_trips,pct_of_total,avg_fare,avg_tip
+Credit Card,4155085,87.49,19.42,4.12
+Cash,536406,11.30,19.6,0.0
+Dispute,43586,0.92,23.76,0.0
+No Charge,13962,0.29,19.89,0.0
