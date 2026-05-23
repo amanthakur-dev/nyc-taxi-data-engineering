@@ -1,32 +1,28 @@
-# nyc-taxi-data-engineering
-End-to-end Data Engineering pipeline built with PySpark and SparkSQL on Databricks — Medallion Architecture (Bronze/Silver/Gold)
 # 🚕 NYC Taxi Data Engineering Pipeline
 
-An end-to-end Data Engineering project built on **Databricks** using 
-**PySpark**, **SparkSQL**, and **Medallion Architecture** 
-(Bronze → Silver → Gold).
+An end-to-end Data Engineering project built on **Databricks** using **PySpark**, **SparkSQL**, and **Medallion Architecture** (Bronze → Silver → Gold).
 
 ---
 
 ## 📌 Project Overview
 
-This pipeline ingests, cleans, transforms, and analyzes 2M+ real NYC 
-Yellow Taxi trip records from Jan–Feb 2026. It demonstrates production-grade 
-Data Engineering patterns including partitioning, broadcast joins, 
-window functions, and multi-layer data lake design.
+This pipeline ingests, cleans, transforms, and analyzes 2M+ real NYC Yellow Taxi trip records from Jan–Feb 2026. It demonstrates production-grade Data Engineering patterns including partitioning, broadcast joins, window functions, and multi-layer data lake design.
 
 ---
 
 ## 🏗️ Architecture
+
+```
 Raw Parquet Files (NYC TLC)
-↓
-[Bronze Layer] — Raw ingestion, schema validation, timestamp added
-↓
-[Silver Layer] — Cleaned, filtered, feature engineered, partitioned by month
-↓
-[Gold Layer]   — Aggregated KPI tables, business-ready, query-optimized
-↓
-[Visualizations] — Matplotlib charts exported from Pandas
+        ↓
+  [Bronze Layer] — Raw ingestion, schema validation, timestamp added
+        ↓
+  [Silver Layer] — Cleaned, filtered, feature engineered, partitioned by month
+        ↓
+  [Gold Layer]   — Aggregated KPI tables, business-ready, query-optimized
+        ↓
+  [Visualizations] — Matplotlib charts exported from Pandas
+```
 
 ---
 
@@ -57,12 +53,15 @@ Raw Parquet Files (NYC TLC)
 ---
 
 ## 📁 Data Lake Structure
+
+```
 /Volumes/workspace/default/taxi_data/
 ├── bronze/     → Raw combined Parquet (with ingestion timestamp)
 ├── silver/     → Cleaned, partitioned by pickup_month
 ├── gold/       → 12 aggregated KPI tables
 ├── charts/     → 7 exported PNG visualizations
 └── exports/    → CSV summaries for reporting
+```
 
 ---
 
