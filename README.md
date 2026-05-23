@@ -11,7 +11,7 @@ An end-to-end Data Engineering project built on **Databricks** using
 ## 📌 Project Overview
 
 This pipeline ingests, cleans, transforms, and analyzes 2M+ real NYC 
-Yellow Taxi trip records from Jan–Feb 2023. It demonstrates production-grade 
+Yellow Taxi trip records from Jan–Feb 2026. It demonstrates production-grade 
 Data Engineering patterns including partitioning, broadcast joins, 
 window functions, and multi-layer data lake design.
 
@@ -32,7 +32,7 @@ Raw Parquet Files (NYC TLC)
 
 ## 📊 Key KPIs & Insights
 
-- 📈 **Daily Revenue Trend** — Revenue pattern across Jan–Feb 2023
+- 📈 **Daily Revenue Trend** — Revenue pattern across Jan–Feb 2026
 - 🕐 **Peak Hour Demand** — Highest trip volume between 6PM–8PM
 - 📅 **Day of Week Analysis** — Friday generates highest weekly revenue
 - 💳 **Payment Split** — 70%+ trips paid by credit card
