@@ -1,16 +1,16 @@
-# 🚕 NYC Taxi Data Engineering Pipeline
+# NYC Taxi Data Engineering Pipeline
 
 An end-to-end Data Engineering project built on **Databricks** using **PySpark**, **SparkSQL**, and **Medallion Architecture** (Bronze → Silver → Gold).
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This pipeline ingests, cleans, transforms, and analyzes 2M+ real NYC Yellow Taxi trip records from Jan–Feb 2026. It demonstrates production-grade Data Engineering patterns including partitioning, broadcast joins, window functions, and multi-layer data lake design.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Raw Parquet Files (NYC TLC)
@@ -26,19 +26,19 @@ Raw Parquet Files (NYC TLC)
 
 ---
 
-## 📊 Key KPIs & Insights
+##  Key KPIs & Insights
 
-- 📈 **Daily Revenue Trend** — Revenue pattern across Jan–Feb 2026
-- 🕐 **Peak Hour Demand** — Highest trip volume between 6PM–8PM
-- 📅 **Day of Week Analysis** — Friday generates highest weekly revenue
-- 💳 **Payment Split** — 70%+ trips paid by credit card
-- 💰 **Tipping Behaviour** — Tip rate highest in early morning hours
-- 🚦 **7-Day Moving Average** — Smoothed demand trend over time
-- 📦 **Fare Quartile Analysis** — Higher fare trips correlate with higher tips
+1. **Daily Revenue Trend** — Analyzed revenue patterns across January–February 2026 to identify demand fluctuations over time.
+2. **Peak Hour Demand** — Identified the highest trip volumes occurring between 6 PM and 8 PM.
+3. **Day of Week Analysis** — Observed Friday as the highest revenue-generating day of the week.
+4. **Payment Split** — Found that over 70% of trips were completed using credit card payments.
+5. **Tipping Behaviour** — Detected the highest tipping rates during early morning hours.
+6. **7-Day Moving Average** — Applied rolling average analysis to smooth short-term demand fluctuations.
+7. **Fare Quartile Analysis** — Discovered that higher fare trips generally correlate with higher tip amounts.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -52,7 +52,7 @@ Raw Parquet Files (NYC TLC)
 
 ---
 
-## 📁 Data Lake Structure
+## Data Lake Structure
 
 ```
 /Volumes/workspace/default/taxi_data/
@@ -65,7 +65,7 @@ Raw Parquet Files (NYC TLC)
 
 ---
 
-## ⚙️ Pipeline Notebooks
+## Pipeline Notebooks
 
 | Notebook | Description |
 |----------|-------------|
@@ -78,7 +78,7 @@ Raw Parquet Files (NYC TLC)
 
 ---
 
-## 🔍 Advanced SQL Concepts Demonstrated
+## Advanced SQL Concepts Demonstrated
 
 - `RANK()` / `DENSE_RANK()` with `PARTITION BY`
 - `LAG()` for day-over-day revenue change
@@ -90,7 +90,7 @@ Raw Parquet Files (NYC TLC)
 
 ---
 
-## ⚡ Optimization Techniques Applied
+## Optimization Techniques Applied
 
 - **Broadcast joins** for small lookup tables — eliminates shuffle
 - **Partition pruning** — reads only relevant month folders
@@ -101,7 +101,7 @@ Raw Parquet Files (NYC TLC)
 
 ---
 
-## 📸 Sample Charts
+## Sample Charts
 
 ### Daily Revenue Trend
 ![Daily Revenue](charts/daily_revenue.png)
@@ -114,7 +114,7 @@ Raw Parquet Files (NYC TLC)
 
 ---
 
-## 📂 Dataset Source
+## Dataset Source
 
 [NYC TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)  
 Yellow Taxi — January & February 2026
